@@ -1,0 +1,422 @@
+*
+{ 
+    margin: 0;
+     /* مارجن المسافة بين كل عنصر و ال بعده */
+    padding: 0;
+    /* البادنج هي الهوامش بتاعه العنصر */
+    font-family: sans-serif; 
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.Home
+{
+    height: 650px;
+    width:105%;
+    position: relative;
+background-color: rgb(134, 177, 214);
+background-image: url(https://cdn.sanity.io/images/0vv8moc6/dvm360/92b6017070e4b78621b642c3775e6aa04b205168-4288x2848.jpg?fit=crop&auto=format) ;
+background-repeat: no-repeat;
+background-size: cover ; 
+}
+
+.My_p 
+{
+ height: 100px;
+ width: 100%;
+ position: absolute;
+ font-style: italic;
+ font-size: 40px;
+ top: 40%;
+ left: 3%;
+}
+
+
+
+
+
+
+nav {
+ width: 80%; 
+height: 80px;
+font-size: 15px;
+display: flex;
+justify-content: space-between;
+
+
+}
+nav a {
+    position: relative;
+    top: 50%;
+    left: 10%;
+text-decoration: none;
+font-size: 20px;
+font-family: sans-serif;
+text-transform: capitalize;
+color: black;
+transition: 0.3s;
+}
+
+a::before {
+content:'' ;
+position: absolute;
+left: 0;
+height: 3px;
+width: 100%;
+background-color: black;
+bottom: 50px;
+transition: 0.3s; 
+
+}
+.logo{
+
+  width: 150px;
+   height: 150px;
+border-radius: 50%;
+margin-left: 40px;
+margin-top: 0%;
+padding: 0% ;
+}
+
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 90%;
+  border: 3px solid #0d0d0e;
+  padding: 5px;
+  height: 20px;
+  border-radius: 10px;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: rgb(1, 27, 31);
+}
+
+ 
+
+
+ .wrap{
+  width: 60%;
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+} 
+
+ a:hover{
+     color: white;
+}
+a:hover::before{
+    width: 50%;
+} 
+
+
+
+/* about us*/
+
+#about
+ {
+width: 100px;
+padding: 78 0 px;
+background-color: #8fb8ca;
+
+
+ }
+#about img {
+height: 450px;
+width: 450%;
+
+}
+
+.about-text
+ {
+width: 100%;
+
+ }
+.main {
+width: 700%;
+max-width: 700%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+.about-text h1 {
+color: black;
+font-size: 80px;
+text-transform: capitalize;
+margin-left: 30%;
+
+}
+.about-text p 
+{
+  
+color: black ;
+letter-spacing:1px;
+margin-left: 30%;
+font-size: 20px;
+font-style: italic;
+
+}
+
+#pharmacy{
+  height: 700px;
+  width: 100%;
+  background-color: #c5c9ce;
+  justify-content: space-evenly;
+  position: relative;
+  
+}
+
+#pharmacy h1{
+  text-align: center;
+  color: rgba(13, 13, 14, 0.795);
+  padding-top: 15px;
+  padding-bottom: 50px;
+  }
+  h2{
+      text-align:left;
+      color: rgba(21, 119, 144, 0.795);
+      padding-top: 10px;
+      padding-left: 70px;
+  }
+  #pharmacy .container{
+      width: 100%;
+      height: 200px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+     margin-top: 5px;
+     position: relative;
+      
+      
+  }
+  #pharmacy .container2{
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    position: relative;
+    
+}
+  .box{
+      width: 250px;
+      margin: 0 25px;
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+      transition: 1s;
+  
+  }
+  .box img{
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+  }
+
+  button{
+    border: 2px solid rgba(21, 119, 144, 0.795);
+    background:#d8d2d2;;
+    color:  rgba(21, 119, 144, 0.795);
+    font-weight: bold;
+    margin-left: 55px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+button:hover{
+    box-shadow: 0 0 5px rgba(21, 119, 144, 0.795);
+}
+
+ 
+
+
+ 
+
+
+/* regestration form*/
+
+
+#sign-in {
+    padding: 16px;
+     background-color:#a6c3ce;
+     text-align: center;
+
+  }
+  
+  
+  input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    
+  }
+  
+  
+   hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  } 
+  
+ 
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+  
+    width: 50%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  } 
+ 
+  
+ 
+  a {
+    color: dodgerblue;
+  }
+  
+  
+  .signin {
+    background-color: #f1f1f1;
+     text-align: center; 
+  }
+
+
+  
+
+/* contact us*/
+
+
+#container
+{
+min-height: 100px;
+
+background: rgb(169, 178, 190);
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #8fb8ca;
+
+}
+#container form
+{
+width: 700px;
+height: 600px;
+display: flex;
+justify-content: center;
+box-shadow: rgb(0,0,0,0.5);
+border: radius 15px;
+background: rgba(255, 255, 255, 0.329);
+backdrop-filter:blur(10px);
+flex-wrap: wrap;
+
+} 
+
+#container form h1 
+{
+color: #0f0f0f;
+font-weight: 500;
+margin-top: 20px;
+width: 500px;
+text-align: center;
+}
+
+#container form input 
+{
+width: 290px;
+height: 40px;
+padding-left: 10px;
+outline: none;
+border: none;
+font-size: 15px;
+margin-bottom: 10px;
+background: none;
+border-bottom: 2px #131212;
+
+}
+
+#container form input ::placeholder
+ {
+color: #0c0c0c;
+ }
+
+ #container form #lastName, 
+ #container form #mobile
+ {
+margin-left: 20px;
+
+ }
+
+#container form h4 
+{
+color: #0c0c0c;
+font-weight: 300;
+width: 600px;
+margin-top: 20px;
+}
+
+#container form textarea{
+
+  border: none;
+  border-bottom: 5px solid #fff;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 50px;
+ 
+
+}
+
+#container form #button{
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #333;
+  padding: 0; margin-right: 500;
+  margin-bottom: 200px;
+  margin-left: 50px;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
